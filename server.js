@@ -12,6 +12,7 @@ const openings = [
 
 // API endpoint to fetch openings
 app.get('/api/openings', (req, res) => {
+    res.setHeader('Content-Type', 'application/json');
     res.json(openings);
 });
 
